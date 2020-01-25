@@ -8,20 +8,13 @@ class TreeNode:
 
 class Solution:
     def removeLeafNodes(self, root, target):
-        if root == target:
-            if root.left:
-                root = root.left
-                self.removeLeafNodes(root, target)
-            elif root.left is None and root.right is not None:
-                root = root.right
-                self.removeLeafNodes(root, target)
-            else:
-                root = None
-        else:
-            if root.left:
-                self.removeLeafNodes(root.left, target)
-            if root.right:
-                self.removeLeafNodes(root.right, target)
+        # 用后序遍历，先遍历子节点再根节点，这样也没必要写的那么麻烦了
+        if root is None:
+            return None
+        root.left = self.removeLeafNodes(root.left, target)
+        root.right = self.removeLeafNodes(root.right, target)
+        if root.left is None and root.right is None and root.val == target:
+            return None
         return root
 
 
@@ -36,6 +29,6 @@ r3 = TreeNode(4)
 l1.left = l2
 r1.left =r2
 r1.right = r3
-print(Solution().removeLeafNodes(root, 2).left.val)
+print(Solution().removeLeafNodes(root, 2).left)
 
 
