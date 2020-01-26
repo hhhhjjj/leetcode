@@ -2,16 +2,15 @@
 class Solution:
     def arrayRankTransform(self, arr):
         length = len(arr)
-        if length == 0:
-            return None
         import copy
-        arr1 = copy.deepcopy(arr)
+        arr1 = list(set(copy.copy(arr)))
         # 要去重，不然序列会是错的
         # 注意列表深拷贝
         arr1.sort()
+        index_dict = dict(zip(arr1,range(len(arr1))))
         res = []
         for i in range(length):
-            res.append(arr1.index(arr[i]) + 1)
+            res.append(index_dict[arr[i]] + 1)
         return res
 
 
