@@ -7,7 +7,7 @@ class Solution:
         if length == d:
             return sum(jobDifficulty)
         res = 0
-        # 这里有个条件是要执行第i项必须完成前面全部的
-        
+        # 用动态规划来解还是比较稳的，复杂度为dn方
+
 
 print(Solution().minDifficulty(jobDifficulty = [6,5,4,3,2,1], d = 2))
