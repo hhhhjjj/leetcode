@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ea77146-c88d-480c-a7be-d70e536a02e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/分裂二叉树的最大乘积.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/外观数列.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/实现strStr().py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组大小减半.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/方阵中战斗力最弱的K行.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/删除链表中的节点.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分裂二叉树的最大乘积.py" beforeDir="false" afterPath="$PROJECT_DIR$/分裂二叉树的最大乘积.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -748,7 +745,7 @@
       <workItem from="1580522055243" duration="4741000" />
       <workItem from="1580612068137" duration="2309000" />
       <workItem from="1580633359113" duration="25000" />
-      <workItem from="1580633394764" duration="1713000" />
+      <workItem from="1580633394764" duration="4212000" />
     </task>
     <servers />
   </component>
