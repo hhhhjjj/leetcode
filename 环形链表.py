@@ -22,5 +22,5 @@ class Solution:
             except:
                 return False
 
-# 慢的一批，
+# 慢的一批，其实没那么复杂，直接一个哈希表判断是否重复就行
 
