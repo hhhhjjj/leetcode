@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ea77146-c88d-480c-a7be-d70e536a02e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/零钱兑换.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/多数元素.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/字母异位词分组.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/递增的三元子序列.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/阶乘后的零.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/矩阵置零.py" beforeDir="false" afterPath="$PROJECT_DIR$/矩阵置零.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +55,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.24744377" />
   </component>
-  <component name="RunManager" selected="Python.二叉搜索树中第K小的元素">
-    <configuration name="二叉树的中序遍历" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.阶乘后的零">
+    <configuration name="阶乘后的零" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +69,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/二叉树的中序遍历.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/阶乘后的零.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="矩阵置零" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/矩阵置零.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="字母异位词分组" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/字母异位词分组.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1198,9 +1246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.阶乘后的零" />
+        <item itemvalue="Python.字母异位词分组" />
+        <item itemvalue="Python.矩阵置零" />
         <item itemvalue="Python.测试for循环里面修改i的值" />
         <item itemvalue="Python.二叉搜索树中第K小的元素" />
-        <item itemvalue="Python.二叉树的中序遍历" />
       </list>
     </recent_temporary>
   </component>
@@ -1275,6 +1325,7 @@
       <workItem from="1582891722311" duration="3271000" />
       <workItem from="1582936642070" duration="4909000" />
       <workItem from="1582942995477" duration="2743000" />
+      <workItem from="1582959638123" duration="10787000" />
     </task>
     <servers />
   </component>
@@ -1298,53 +1349,53 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="278" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582786996070" />
-    <state width="1877" height="339" key="GridCell.Tab.0.bottom" timestamp="1582949593140">
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom" timestamp="1582975330889">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="11" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1582793497239" />
-    <state width="1877" height="339" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582949593140" />
+    <state width="1877" height="339" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975330889" />
     <state width="735" height="125" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580641526726" />
-    <state width="1877" height="339" key="GridCell.Tab.0.center" timestamp="1582949593140">
+    <state width="1877" height="339" key="GridCell.Tab.0.center" timestamp="1582975330889">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="11" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1582793497239" />
-    <state width="1877" height="339" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582949593140" />
+    <state width="1877" height="339" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975330889" />
     <state width="735" height="125" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580641526725" />
-    <state width="1877" height="339" key="GridCell.Tab.0.left" timestamp="1582949593140">
+    <state width="1877" height="339" key="GridCell.Tab.0.left" timestamp="1582975330889">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="11" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1582793497239" />
-    <state width="1877" height="339" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582949593140" />
+    <state width="1877" height="339" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975330889" />
     <state width="735" height="125" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580641526725" />
-    <state width="1877" height="339" key="GridCell.Tab.0.right" timestamp="1582949593140">
+    <state width="1877" height="339" key="GridCell.Tab.0.right" timestamp="1582975330889">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="11" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1582793497239" />
-    <state width="1877" height="339" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582949593140" />
+    <state width="1877" height="339" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975330889" />
     <state width="735" height="125" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580641526726" />
-    <state width="1892" height="350" key="GridCell.Tab.1.bottom" timestamp="1582812853932">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1582975326671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="202" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581737104000" />
-    <state width="1892" height="350" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582812853932" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975326671" />
     <state width="1202" height="184" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579965653622" />
-    <state width="1892" height="350" key="GridCell.Tab.1.center" timestamp="1582812853932">
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1582975326671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="202" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581737104000" />
-    <state width="1892" height="350" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582812853932" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975326671" />
     <state width="1202" height="184" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1579965653622" />
-    <state width="1892" height="350" key="GridCell.Tab.1.left" timestamp="1582812853932">
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1582975326671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="202" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581737104000" />
-    <state width="1892" height="350" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582812853932" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975326671" />
     <state width="1202" height="184" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1579965653622" />
-    <state width="1892" height="350" key="GridCell.Tab.1.right" timestamp="1582812853932">
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1582975326671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="202" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581737104000" />
-    <state width="1892" height="350" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582812853932" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1582975326671" />
     <state width="1202" height="184" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1579965653622" />
     <state x="40" y="0" key="SettingsEditor" timestamp="1580135233413">
       <screen x="0" y="0" width="1280" height="680" />
@@ -1410,7 +1461,7 @@
     <SUITE FILE_PATH="coverage/leetcode$69.coverage" NAME="6和9组成的最大数字 Coverage Results" MODIFIED="1579671127074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$k.coverage" NAME="最后k个数的乘积 Coverage Results" MODIFIED="1581904829360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$fori.coverage" NAME="测试for循环里面修改i的值 Coverage Results" MODIFIED="1582795145307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leetcode$.coverage" NAME="零钱兑换 Coverage Results" MODIFIED="1582949095341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leetcode$.coverage" NAME="阶乘后的零 Coverage Results" MODIFIED="1582975330889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$strStr__.coverage" NAME="实现strStr() Coverage Results" MODIFIED="1580526643876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$2.coverage" NAME="买卖股票的最佳时机2 Coverage Results" MODIFIED="1580346199822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetcode$shuffle_an_array.coverage" NAME="shuffle an array Coverage Results" MODIFIED="1581860597252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
