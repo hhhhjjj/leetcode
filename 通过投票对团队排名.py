@@ -16,11 +16,9 @@ class Solution:
                 else:
                     word_dict[i[j]] = 1001 * (length_v - j)
 
-        d_order = sorted(word_dict.items(), key = lambda x:x[1],reverse= True)
-        print(d_order)
-        res = ""
+        d_order = sorted(word_dict.items(), key = lambda x:x[1] + [90 - ord(x[0])],reverse= True)
 
-        return res
+        return ""
 
 print(Solution().rankTeams(["BCA","CAB","CBA","ABC","ACB","BAC"]))
 
