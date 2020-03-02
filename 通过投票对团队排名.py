@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
 class Solution:
     def rankTeams(self, votes: [str]) -> str:
-        length_vote = len(votes)
-        if length_vote == 0:
-            return ""
-        if length_vote == 1:
-            return votes[0]
-        length_v = len(votes[0])
-        # 想直接做个权重，这个长度最大1000，也就是说上一级的权重只要为1001就不用担心后面的能追上来
-        word_dict = {}
-        for i in votes:
-            for j in range(length_v):
-                if word_dict.get(i[j]):
-                    word_dict[i[j]] += 1001*(length_v - j)
-                else:
-                    word_dict[i[j]] = 1001 * (length_v - j)
+        # 直接用权重的还是不靠谱，有bug
+        import collections
+        n = len(votes[0])
+        # 初始化哈希映射
+        # 这个defaultdict就是在如果没有这个key但是又被查询的时候设置默认值
+        # 这里的默认值就是各个阶段排名的次数
+        ranking = collections.defaultdict(lambda: [0] * n)
+        # 遍历统计
+        for vote in votes:
+            for i, vid in enumerate(vote):
+                ranking[vid][i] += 1
 
-        d_order = sorted(word_dict.items(), key = lambda x:x[1] + [90 - ord(x[0])],reverse= True)
-
-        return ""
+        # 取出所有的键值对
+        result = list(ranking.items())
+        # 排序
+        result.sort(key=lambda x: (x[1], -ord(x[0])), reverse=True)
+        return "".join([vid for vid, rank in result])
 
 print(Solution().rankTeams(["BCA","CAB","CBA","ABC","ACB","BAC"]))
 
