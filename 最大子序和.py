@@ -8,6 +8,7 @@ class Solution:
         for i in range(1, n):
             # 不需要两个指针，在这就是保留前面的数据，其实是动态规划
             if nums[i - 1] > 0:
+                # 这里的nums[i]其实是前面所有的相加
                 nums[i] += nums[i - 1]
                 # 贪心算法也差不多
             max_sum = max(nums[i], max_sum)
