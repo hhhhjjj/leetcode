@@ -1,27 +1,17 @@
 # -*- coding: utf-8 -*-
-# 这个感觉是用树来完成，但是不知道如何不扫描那么多次manger
 class Solution:
     def numOfMinutes(self, n: int, headID: int, manager: [int], informTime: [int]) -> int:
-        if n <= 1:
-            return 0
-        manager_dict = {}
+        res = 0
         for i in range(n):
-            if manager_dict.get(manager[i]):
-                manager_dict[manager[i]].append(i)
-            else:
-                manager_dict[manager[i]] = [i]
-        print(manager_dict)
-        self.res = 0
-        def helper(ls):
-            max_time = 0
-            for i in ls:
-                if informTime[i] > max_time:
-                    max_time = informTime[i]
-                if manager_dict.get(i):
-                    helper(manager_dict[i])
-            self.res += max_time
-        helper(manager_dict[-1])
-        return self.res
+            if informTime[i] == 0:
+                temp = 0
+                index = i
+                while index != - 1:
+                    temp += informTime[index]
+                    index = manager[index]
+                res = max(res, temp)
+        # 这个就是根据现有数据从下往上推，然后用res来去重
+        return res
 
 
 
