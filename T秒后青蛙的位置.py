@@ -1,36 +1,29 @@
 # -*- coding: utf-8 -*-
-class Solution:
-    def frogPosition(self, n: int, edges: [[int]], t: int, target: int) -> float:
-        # 这个是无向图
-        length0 = len(edges)
-        if length0 == 0:
-            return 0
+class Solution(object):
+    def frogPosition(self, n, edges, t, target):
         if target == 1:
-            return 1
-        word_dict = {}
-        index_dict = {}
-        flag = 0
-        for i in range(length0):
-            if flag != 0 and edges[i][0] != flag:
-                res = float(1 / len(word_dict[flag]))
-                while flag != 1:
-                    flag = index_dict[flag]
-                    res *= float(1 / len(word_dict[flag]))
-                return res
-            index_dict[edges[i][1]] = edges[i][0]
-            if word_dict.get(edges[i][0]):
-                word_dict[edges[i][0]].append(edges[i][1])
+            return 1 if n == 1 else 0
+        # 这个人和我一样也是用字典来
+        # 这个是创建一个新的字典，键就是这个range，值的话在这是none
+        dic = dict().fromkeys(range(1,n+1))
+        # print(dic)
+        for key in dic.keys(): dic[key] = [[],0,1]
+        for edge in edges:
+            if edge[0]<edge[1]:
+                dic[edge[0]][0].append(edge[1])
             else:
-                word_dict[edges[i][0]] = [edges[i][1]]
-            if edges[i][1] == target:
-                flag = edges[i][0]
-        res = float(1 / len(word_dict[flag]))
-        print(word_dict)
-        print(index_dict)
-        while flag != 1:
-            flag = index_dict[flag]
-            res *= float(1 / len(word_dict[flag]))
-        return res
+                dic[edge[1]][0].append(edge[0])
+        queue,level = [], 0
+        queue.append(1)
+        while queue:
+            nextL,level = [], level + 1
+            for node in queue:
+                for son in dic[node][0]:
+                    nextL.append(son)
+                    dic[son][1], dic[son][2] = level, dic[node][2] / len(dic[node][0])
+                    if son == target:
+                        return dic[son][2] if t == dic[son][1] or (t > dic[son][1] and len(dic[son][0])==0) else 0
+            queue = nextL
 
 
-print(Solution().frogPosition(3, [[2,1],[3,2]] ,1 , 2))
+print(Solution().frogPosition(7, [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], 20, 6))
