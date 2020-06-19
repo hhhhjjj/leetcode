@@ -1,0 +1,113 @@
+一个数组，数组里面30个数字，从里面拿掉两个，写代码告诉拿掉了哪两个
+ls_old = [1,1,2]
+ls = [1]
+哈希表。。。记录每一次次数，然后都查一遍
+my_dict = {}
+for num in ls:
+	if my_dict.get(num) is None:
+		my_dict[num] = 1
+	else:
+		my_dict[num] += 1
+res = []
+for num in ls_old:
+	if my_dict.get(num) is None or my_dict[num] == 0:
+		res.append(num)
+	else:
+		my_dict[num] -= 1
+return res
+
+排序+遍历
+
+位运算 + 异或
+
+
+
+def solution(ls_old,ls):
+	res = int()
+	for num in ls_old:
+		res ^= num
+	for num in ls:
+		res^=num
+	return num
+
+
+字符串，统计这里出现多少个连续的123，出现过一次就拿掉一次
+
+类似字符串匹配，kmp不能用
+
+暴力：
+
+res = 0
+
+my_str = "112323"
+
+length = len(my_str)
+
+while True:
+for i in range(length):
+	if length - i < 3:
+		break 
+	if my_str[i:i + 2] == "123":
+		res += 1
+		my_str = my_str[0:i] + my_str[i + 3:]
+		length -= 3
+
+
+给所有的四位数，找到四位数里面相邻两位差一
+12 89
+从1到8，从0到8
+8*9
+
+逆向
+从9到1，从9到1
+9*9
+
+中间
+1到9 0到8 从1到9 * 2
+9 * 9 * 9 * 2
+
+去重
+1到6， 6到 0
+-6， -7 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
