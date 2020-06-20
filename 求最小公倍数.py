@@ -26,6 +26,7 @@ import sys
 
 
 def gcd(a, b):
+    # 这个就是用不停的取余
     if b == 0:
         return a
     return gcd(b, a % b)
@@ -40,6 +41,11 @@ while True:
             a = int(n[0])
             b = int(n[1])
             print(a * b // gcd(a, b))
+            # 最后居然是个print输出
     else:
         break
+
+data=list(map(int,input().split()))
+print(data)
+# 用这个模板感觉也行吧。。。
 
