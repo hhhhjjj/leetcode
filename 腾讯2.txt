@@ -1,0 +1,13 @@
+字符串去子串
+def solution(A, B):
+	if A.find(B) == -1 or B.find(A) == -1:
+		return [A, B]
+	else:
+		if len(A) < len(B):
+			A, B = B, A
+		# 开始去重
+		while A.find(B) != -1:
+			for word in A:
+				if word == B[0]:
+					
+				
